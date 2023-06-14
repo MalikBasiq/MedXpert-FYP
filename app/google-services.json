@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "597397938510",
+    "project_id": "medxpert-2023",
+    "storage_bucket": "medxpert-2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597397938510:android:2bc9dcdd62d1791793be1f",
+        "android_client_info": {
+          "package_name": "medxpert.main.daniyal_medxpert"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYkS6ZTZmX5JqtnecnLjcJF6ZAOI43v3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

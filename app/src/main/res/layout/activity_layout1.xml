@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".doctor.Layout1">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbarcolor"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_gravity="center"
+            android:text="Add Prescription"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:background="@drawable/medicalrecord_bluecard"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/namedoclayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:text="TextView"
+            android:textColor="#FBFBFB"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/designationdoclayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="TextView"
+            android:textColor="#FBFAFA"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/datedoclayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_200sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_minus36sdp"
+            android:text="TextView"
+            android:textColor="#FAF8F8"
+            android:textSize="@dimen/_15ssp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_minus58sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:backgroundTint="#EEEEEE"
+        app:cardCornerRadius="@dimen/_28sdp"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/medicinesdoclayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout2buttons"
+                    android:text="Medicine"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp" />
+
+                <Button
+                    android:id="@+id/vitalsdoclayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout2buttons"
+                    android:text="Vitals"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp" />
+
+                <Button
+                    android:id="@+id/notesdoclayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout2buttons"
+                    android:text="Notes"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearforfragmentsdoclayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="@dimen/_44sdp"
+                android:orientation="vertical" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addPrescriotionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/_72sdp"
+            android:layout_marginEnd="@dimen/_72sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:background="@drawable/layout2buttons"
+            android:onClick="onClickAddPrescriptionBtn"
+            android:text="Add Prescription"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
